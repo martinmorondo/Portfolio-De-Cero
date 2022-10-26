@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+    <!-- Menu  -->
+    <div class="nav-container">
+        <header>
+            <div class="logo">
+                <a href="#">Martín Morondo</a>
+            </div>
+            <nav id = "nav">
+                <ul>
+                    <li><a href="#home" onclick="seleccionar()">HOME</a></li>
+                    <li><a href="#about-me" onclick="seleccionar()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-responsive">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Home Section  -->
+    <section class="home" id = "home">
+        <div class="banner-content">
+            <div class="img-content">
+                <img src="/img/my.png" alt="profile-picture">
+            </div>
+            <h1>MARTÍN MORONDO</h1>
+            <h2>Front End Developer</h2>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-wpforms"></i></a>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- About me section  -->
+    <section id="about-me" class = "about">
+        <div class="section-content">
+            <h2>About me</h2>
+            <p>First year student of Systems Engineering.
+                <span>Front-End Developer</span> with 2 years of experience. I have created responsive websites on a freelance basis for companies in different countries.
+                I have several certifications that can be found in my Linkedin profile.
+                I'm looking for my first work experience.</p>
+            
+            <div class="row">
+                <!-- Personal Information -->
+                <div class="col">
+                    <h3>Personal Information</h3>
+                    <ul>
+                        <li>
+                            <strong>Birthday</strong>
+                            23-02-1999
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            martinmorondo@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            https://martinmorondo.github.io/
+                        </li>
+                        <li>
+                            <strong>Position:</strong>
+                            Front-End Developer
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section  -->
+    <section id="skills" class="skills">
+        <div class="interests container">
+
+            <div class="section-title">
+              <h2>Skills</h2>
+            </div>
+      
+            <div class="row">
+      
+              <div class="col-lg-3 col-md-4">
+                <div class="icon-box">
+                  <i class="fa-brands fa-html5"></i>
+                  <h3>HTML</h3>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                <div class="icon-box">
+                  <i class="fa-brands fa-css3-alt"></i>
+                  <h3>CSS</h3>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                <div class="icon-box">
+                  <i class="fa-brands fa-bootstrap"></i>
+                  <h3>Bootstrap</h3>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+                <div class="icon-box">
+                  <i class="fa-brands fa-sass"></i>
+                  <h3>Sass</h3>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                <i class="fa-brands fa-js "></i>
+                  <h3>Javascript</h3>
+                </div>
+              </div>
+              
+              <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                  <i class="fab fa-react" aria-hidden="true"></i>
+                  <h3>React</h3>
+                </div>
+              </div>
+              
+              <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                  <i class="fab fa-node"></i>
+                  <h3>Nodejs</h3>
+                </div>
+              </div>
+              
+               <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                  <i class="fab fa-git" aria-hidden="true"></i>
+                  <h3>Git</h3>
+                </div>
+              </div>
+              
+      <!--         <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                  <i class="fas fa-ad"></i>
+                  <h3>Digital Marketing</h3>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="row">
+          <div class="col-lg-12">
+            <ul>
+                <li><a href="img/CV.pdf" download="MartinMorondoCV" class="btn btn purple-gradient btn-lg wow fadeInUp waves-effect waves-light" style="visibility: visible; animation-name: fadeInUp; animation-iteration-count: 1;">DOWNLOAD CV <i class="fas fa-file-download ml-2" aria-hidden="true" ></i> </a></li>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section  -->
+    <section id="portfolio" class="portfolio">
+        <div class="container-section">
+            <h2>PORTFOLIO</h2>
+            <div class="galery">
+                <div class="proyect">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
