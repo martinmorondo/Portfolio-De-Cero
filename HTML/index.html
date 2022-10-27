@@ -19,16 +19,15 @@
             </div>
             <nav id = "nav">
                 <ul>
-                    <li><a href="#home" onclick="seleccionar()">HOME</a></li>
-                    <li><a href="#about-me" onclick="seleccionar()">ABOUT ME</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+                    <li><a href="#home" onclick="select()">HOME</a></li>
+                    <li><a href="#about-me" onclick="select()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="select()">SKILLS</a></li>
+                    <li><a href="#portfolio" onclick="select()">PORTFOLIO</a></li>
+                    <li><a href="#contact" onclick="select()">CONTACT</a></li>
                 </ul>
             </nav>
             
-            <div class="nav-responsive">
+            <div class="nav-responsive responsive" onclick="showHideMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -154,13 +153,6 @@
                   <h3>Git</h3>
                 </div>
               </div>
-              
-      <!--         <div class="col-lg-3 col-md-4 mt-4">
-                <div class="icon-box">
-                  <i class="fas fa-ad"></i>
-                  <h3>Digital Marketing</h3>
-                </div>
-              </div> -->
             </div>
           </div>
 
@@ -179,13 +171,93 @@
             <h2>PORTFOLIO</h2>
             <div class="galery">
                 <div class="proyect">
-                    <img src="" alt="">
+                    <img src="/img/city.jpeg" alt="responsive-city">
+                    <div class="overlay">
+                        <h3>Responsive City</h3>
+                        <p>with HTML and CSS</p>
+                    </div>
+                </div>
+
+                <div class="proyect">
+                    <img src="/img/city.jpeg" alt="responsive-city">
+                    <div class="overlay">
+                        <h3>Responsive City</h3>
+                        <p>with HTML and CSS</p>
+                    </div>
+                </div>
+
+                <div class="proyect">
+                    <img src="/img/city.jpeg" alt="responsive-city">
+                    <div class="overlay">
+                        <h3>Responsive City</h3>
+                        <p>with HTML and CSS</p>
+                    </div>
+                </div>
+
+                <div class="proyect">
+                    <img src="/img/city.jpeg" alt="responsive-city">
+                    <div class="overlay">
+                        <h3>Responsive City</h3>
+                        <p>with HTML and CSS</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact Section  -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Contact Me</p>
+            </div>
 
+            <div class="row mt-2">
+                <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+                  <div class="info-box">
+                    <i class="bx bx-share-alt"></i>
+                    <h3>Social Profiles</h3>
+                    <div class="social-links">
+                      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <form action="https://formsubmit.co/martinmorondo@gmail.com" method="POST">
+
+                <div class="mb-3 mt-3">
+                <label for="Nombre" class="form-label">Nombre</label>
+                <input type="text" name="name" required class="form-control bg-transparent" style = "color: white" id = "Nombre">
+              </div>
+        
+                <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" name="email" required class="form-control bg-transparent" style = "color: white" id = "email">
+              </div>
+        
+                <div class="mb-3">
+                <label for="subject" class="form-label">Asunto</label>
+                <input type="text" name="subject" class = "form-control bg-transparent" style = "color: white" id = "subject">
+                </div>
+        
+                <div class="mb-3">
+                <label for="comments" class="form-label">Comentarios</label>
+                <textarea name="comments" cols="15" rows="5" class="form-control bg-transparent" aria-label="With textarea" style = "color: white" id = "comments"></textarea>
+                </div>
+               
+                <input type="submit" value="Enviar" class="btn btn-primary"></input>
+        
+                <input type="hidden" name="_next" value = "https://martinmorondo.github.io/">
+                <input type="hidden" name="_captcha" value= "false">
+           </form>
+
+        </div>
+    </section>
+
+    <script src="/JS/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
