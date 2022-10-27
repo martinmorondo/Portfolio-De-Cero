@@ -378,19 +378,22 @@ html {
 
 
   /* Responsive Section  */
-
   @media screen and (max-width: 980px) {
     nav {
         display: none;
     }
 
     .nav-responsive {
+      display: block;
+    }
+
+    nav.responsive {
         display: block;
         position: absolute;
         right: 0;
-        top: 15px;
+        top: 75px;
         background-color: #252A2E;
-        width: 50px;
+        width: 180px;
     }
 
     nav.responsive ul {
