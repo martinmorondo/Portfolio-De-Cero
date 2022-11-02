@@ -41,7 +41,8 @@ html {
 .nav-container header .logo a {
     font-family: 'Righteous', sans-serif;
     font-size: 2.2rem;
-    color: #1CB698;
+    color: #0a68f5;
+    text-shadow: 0px 0px 8px blue;
     text-decoration: none;
 }
 
@@ -60,7 +61,8 @@ html {
 }
 
 .nav-container header nav ul li a:hover {
-    color: #1CB698;
+    color: #e29219;
+    text-shadow: 0px 0px 8px gold;
 }
 
 .nav-responsive {
@@ -75,7 +77,6 @@ html {
 /* Section Home  */
 
 .home {
-    /* background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)), url(/img/fondo.jpg); */
     background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),  url(/img/programacion-2.jpg);
     background-size: cover;
     height: 100vh;
@@ -90,7 +91,6 @@ html {
     text-align: center;
     border-radius: 50px; 
     max-width: 350px;
-    height: 450px;
     background-color: #1e2326;
     opacity: 0.7;
     z-index: 10;
@@ -98,7 +98,8 @@ html {
 }
 
 .home .banner-content img {
-    border: 10px solid #1CB698;
+    border: 10px solid rgba(45, 12, 34, 0.5);
+    box-shadow: 1px 1px #1CB698;
     display: block;
     width: 80%;
     margin: 30px auto;
@@ -106,14 +107,16 @@ html {
 }
 
 .home .banner-content h1 {
-    margin-top: 40px;
-    font-size: 42px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 2.5rem;
     font-family: 'Righteous', sans-serif;
+    text-shadow: 0px 0px 8px red;
 }
 
 .home .banner-content h2 {
     margin-top: 5px;
-    font-size: 15px;
+    font-size: 1.2rem;
     font-weight: normal;
 }
 
@@ -128,11 +131,12 @@ html {
     line-height: 42px;
     margin: 20px 5px;
     font-size: 20px;
-    transition: .3s;
+    transition: all .3s;
 }
 
 .home .banner-content .social-media a:hover {
     background-color: #1CB698;
+    transform: scale(1.1);
 }
 
 /* About  */
@@ -140,13 +144,12 @@ html {
 .about {
     background-color: #1e2326;
     color: #fff;
-    padding: 50px 20px;
+    padding: 40px 20px;
 }
 
 .about .section-content {
     max-width: 1100px;
     margin: 1rem auto;
-
 }
 
 .about h2 {
@@ -196,6 +199,7 @@ html {
 
 .skills {
     background-color: #1e2326;
+    padding: 5rem;
 }
 
 .skills h3 {
@@ -254,16 +258,14 @@ html {
     color: #fff;
   }
   
-  
-
 .interests .icon-box {
     display: flex;
     align-items: center;
     padding: 20px;
-    background: #3ba28e;
+    background: #3b62a2;
     transition: ease-in-out 0.5s;
   }
-  
+
   .interests .icon-box i {
     font-size: 32px;
     padding-right: 10px;
@@ -280,8 +282,10 @@ html {
   }
   
   .interests .icon-box:hover {
-    background: #94dbcd;
+    background: #1f336d;
   }
+
+  
 
   /* Portfolio Section  */
   .portfolio {
@@ -340,11 +344,12 @@ html {
 
   .portfolio .galery .proyect .overlay h3 {
     margin-bottom: 20px;
-    transition: 1s;
+    transition: .1s ease;
   }
 
   .portfolio .galery .proyect .overlay:hover {
     opacity: 1;
+    transform: scale(1.1);
   }
 
   .portfolio .galery .proyect .overlay h3:hover {
@@ -355,6 +360,7 @@ html {
   
   .contact {
     background-color: #1e2326;
+    padding: 5rem;
   }
 
   .contact h2 {
@@ -417,6 +423,17 @@ html {
         width: fit-content;
     }
   }
+
+
+  @media (max-width: 980px) {
+
+    .interests .icon-box {
+      padding: 10px;
+      margin: 0 auto;
+
+    }
+  }
+  
 
 
 
