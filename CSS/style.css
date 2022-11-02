@@ -12,6 +12,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 /* Menú */
 .nav-container {
     background: #1e2326;
@@ -142,9 +144,13 @@ html {
 /* About  */
 
 .about {
-    background-color: #1e2326;
+    /* background-color: #1e2326; */
+    background: url(https://mathcool.games/data/uploads/programming-1.jpg);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
-    padding: 40px 20px;
+    padding: 10px 20px;
 }
 
 .about .section-content {
@@ -153,10 +159,12 @@ html {
 }
 
 .about h2 {
+    margin-top: 0;
     font-size: 48px;
     font-family: 'Righteous', sans-serif;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
+    text-shadow: 0px 0px 8px gray;
 }
 
 .about .section-content p {
@@ -171,7 +179,7 @@ html {
 }
 
 .about .row .col {
-    width: 50%;
+   text-align: center;
 }
 
 .about .row .col h3 {
@@ -181,6 +189,8 @@ html {
 }
 
 .about .row .col ul {
+  display: flex;
+  justify-content: space-between;
     list-style: none;
     padding: 0;
 }
@@ -190,7 +200,7 @@ html {
 }
 
 .about .row .col ul li strong {
-    display: inline-block;
+    /* display: inline-block; */
     color: #1CB698;
     width: 100px;
 }
@@ -198,7 +208,10 @@ html {
 /* Skills  */
 
 .skills {
-    background-color: #1e2326;
+    background: url(https://images.squarespace-cdn.com/content/v1/5bbb4a7301232c6e6c8757fa/1584547016134-OCZGWK8PEPFU2598DMUR/image-asset.jpeg?format=2500w);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
     padding: 5rem;
 }
 
